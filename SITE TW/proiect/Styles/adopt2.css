@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    cursor: url("../Pics/vecteezy_cute-cat-paw-all-black_27209351_optimized.png"), auto;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    --color1: #FFF;
+    --color2: #D4006F;
+    margin: 0;
+    padding: 0;
+}
+
+#siteName {
+    font-weight: bold;
+    font-size: 5vh;
+    color: white;
+    padding-bottom: 2vh;
+    text-decoration: none;
+}
+
+#siteName:hover {
+    cursor: url("../Pics/image.png"), auto;
+}
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color: var(--color2);
+    padding: 12px 20px;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navItem, .menu li a {
+    font-size: 2.5vh;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.dropdown > .navItem {
+    font-size: 2.5vh;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    transition: font-size 0.3s ease;
+    display: flex;
+    align-items: center;
+    padding: 1em 2vw;
+}
+
+
+.dropdown > .navItem:hover {
+    font-size: 2.5vh;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navItem:hover, .menu li a:hover {
+    font-size: 3.5vh;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #D4006F;
+    border-radius: 0.5vw;
+    padding: 0;
+    min-width: 12vw;
+    z-index: 100;
+    text-align: left;
+}
+
+.dropdown-item {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1vh 1vw;
+    font-size: 2.5vh;
+    line-height: 2.5;
+    transition: background-color 0.2s ease;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.dropdown-item:hover {
+    background-color: #B10055;
+    cursor: url("../Pics/image.png"), auto;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    width: 32vh;
+}
+
+.menu li {
+    padding-left: 30px;
+}
+
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color1);
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color1);
+    transition: width 0.3s ease;
+}
+
+.menu li a:hover {
+    font-size: 3.5vh;
+}
+
+.open-menu,
+.close-menu {
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 1.5rem;
+    z-index: 1010;
+}
+
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+
+#check {
+    display: none;
+}
+
+html {
+    cursor: url("../Pics/vecteezy_cute-cat-paw-all-black_27209351_optimized.png"), auto;
+    overflow-x: hidden;
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+nav {
+    background-color: #D4006F;
+    padding: 1em;
+    text-align: right;
+    position: relative;
+}
+
+nav label {
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+}
+
+nav input[type="checkbox"] {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #D4006F;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+    opacity: 0;
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+}
+
+nav ul li {
+    display: block;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+
+input[type="checkbox"]:checked + ul {
+    display: block;
+    opacity: 1;
+}
+
+@media (max-width: 576px) {
+
+    .adoptionGrid{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 13vh 4vw;
+        align-items: center;
+        justify-content: center;
+        padding-left: -5vh;
+        margin:0;
+    }
+    .adoptionSelect{
+        display: none;
+        visibility: hidden;
+    }
+
+    .desktopMenu {
+        display: none;
+        visibility: hidden;
+    }
+
+    nav label {
+        display: block;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav ul li a {
+        padding: 1em;
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 577px) {
+    .adoptionGrid{
+        flex: 1;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 13vh 4vw;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    nav label {
+        display: none;
+        visibility: hidden;
+    }
+
+    .hamburgerMenuNavbar {
+        display: none;
+        visibility: hidden;
+    }
+
+    nav ul {
+        display: block;
+        opacity: 1;
+        transition: none;
+    }
+}
+
+.adoptionPics {
+    width: 33vh;
+    height: 30vh;
+    display: block;
+    margin: 0 auto;
+    border-radius: 25px;
+    border: 7px solid #C90060;
+    position: relative;
+    z-index: 0;
+    object-fit: cover;
+}
+
+.adoptionSelect {
+    border: 1vw solid #C90060;
+    background-color: #C90060;
+    border-radius: 5vh;
+    margin-left: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 8vh;
+    padding: 3vh;
+    flex: 0 0 25%;
+}
+
+.adoptionSelect select {
+    width: 100%;
+    padding: 1vh;
+    border: 2px solid #FFDAE8;
+    border-radius: 5px;
+    background-color: #FFDAE8;
+    color: #D4006F;
+    font-size: 3vh;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 200ms ease-in-out;
+}
+
+.adoptionSelect select:hover {
+    background-color: #FFB6C1;
+    border-color: #C90060;
+}
+
+.adoptionSelect select:focus {
+    outline: none;
+    box-shadow: 0 0 5px #C90060;
+}
+
+
+.adoptionSelect .applyButton {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#adoptionWrap{
+    display: flex;
+    gap: 2vw;
+    padding: 3vh 1vw;
+    align-items: flex-start;
+}
+
+.adoptionElement {
+    background-color: transparent;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
+
+.adoptionElement > h3{
+    color: white;
+    text-align: center;
+    background-color: #C90060;
+    width: 33vh;
+    margin-top: 0;
+    padding: 1vh;
+    border-radius: 5px;
+}
+
+.adoptionElement > h4{
+    color: #E9CDCE;
+    text-align: center;
+    background-color: #C90060;
+    width: 33vh;
+    margin-top: 0;
+    padding: 1vh;
+    border-radius: 5px;
+}
+
+.adoptionElement > a{
+    font-weight: bold;
+    color: #FDCFB4;
+    text-align: center;
+    background-color: #C90060;
+    width: 33vh;
+    margin-top: 0;
+    padding: 1vh;
+    border-radius: 5px;
+}
+
+button {
+    all: unset;
+}
+
+
+#applyFiltersBtn{
+    margin-right: 1.5vw;
+}
+
+#applyFiltersBtn, #removeFiltersBtn {
+    border: 0.5vh solid #D4006F;
+    padding: 1vh 2vw;
+    border-radius: 3vh;
+    font-size: 2.5vh;
+    font-weight: bold;
+    color: #C90060;
+    background-color: #FFDAE8;
+    cursor: url("../Pics/vecteezy_cute-cat-paw-all-black_27209351_optimized.png"), auto;
+    width: 45%;
+    transition: all 0.3s ease;
+}
+
+#applyFiltersBtn:hover, #removeFiltersBtn:hover {
+    background-color: #FFB6C1; /* Change background color on hover */
+    transform: scale(1.1); /* Scale the button on hover */
+}
+
+.applyButton button {
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.applyButton button:hover {
+    background-color: #FFB6C1;
+    transform: scale(1.1); /* Button enlarges when hovered */
+}
+
+
+.adoptionFilter > h2 {
+    color: white;
+    text-align: center;
+    font-size: 3.2vh;
+}
+
+.adoptionText {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.adoptionText h3,
+.adoptionText h4,
+.adoptionText a {
+    margin: 0;
+    padding: 0.5vh 0;
+    width: 33vh;
+    margin-top: -15px;
+    margin-bottom: 1px;
+}
+
+.adoptionText h3 {
+    font-size: 3.2vh;
+    color: white;
+    background-color: #C90060;
+    padding: 1vh;
+    padding-top: 25px;
+    margin-bottom: 5px
+}
+
+.adoptionText h4 {
+    color: #E9CDCE;
+    background-color: #C90060;
+    padding: 1vh;
+}
+
+.adoptionText a {
+    font-weight: bold;
+    color: #FDCFB4;
+    background-color: #C90060;
+    border-radius: 3px;
+    display: inline-block;
+    text-decoration: none;
+    padding-bottom: 1vh;
+}
+
+.adoptionText a:hover {
+    cursor: url("../Pics/image.png"), auto;
+}
+
+.navItem:hover {
+    font-size: 4vh;
+    cursor: url("../Pics/image.png"), auto;
+    text-decoration: none;
+}

@@ -1,0 +1,161 @@
+/* Global variable for heart color */
+:root {
+    --heart-color: #D4006F; /* Initial color */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFDAE8;
+    color: #C90060;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+header {
+    background-color: #D4006F;
+    padding: 1vh 2vw;
+    text-align: center;
+    width: 100%;
+}
+
+#siteName {
+    font-size: 4vh;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 5vh 2vw;
+    width: 100%;
+    max-width: 900px;
+    box-sizing: border-box;
+    margin-bottom: 15vh;
+}
+
+#donation-intro {
+    margin-bottom: 5vh;
+}
+
+#donation-intro h1 {
+    font-size: 5vh;
+}
+
+#donation-intro p {
+    font-size: 2.5vh;
+    margin-top: 1vh;
+}
+
+#donation-form-section {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #FFF;
+    padding: 3vh 4vw;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#donation-form-section h2 {
+    text-align: center;
+    margin-bottom: 3vh;
+    color: #D4006F;
+}
+
+.form-group {
+    margin-bottom: 2vh;
+}
+
+label {
+    display: block;
+    margin-bottom: 1vh;
+    font-size: 2vh;
+    font-weight: bold;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 1.5vh;
+    font-size: 2vh;
+    border: 2px solid #C90060;
+    border-radius: 5px;
+    background-color: #FFFAFA;
+    color: #C90060;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    background-color: #D4006F;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #C90060;
+}
+
+footer {
+    text-align: center;
+    padding: 2vh 0;
+    background-color: #D4006F;
+    color: white;
+    font-size: 2vh;
+    width: 100%;
+    position: relative;
+}
+
+.heart-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15vh;
+    margin-bottom: 1vh;
+}
+
+.heart {
+    width: 70px;
+    height: 70px;
+    background-color: var(--heart-color);
+    position: relative;
+    transform: rotate(-45deg);
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: var(--heart-color);
+    border-radius: 50%;
+}
+
+.heart::before {
+    top: -35px;
+    left: 0;
+}
+
+.heart::after {
+    top: 0;
+    left: 35px;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1) rotate(-45deg);
+    }
+    50% {
+        transform: scale(1.2) rotate(-45deg);
+    }
+}

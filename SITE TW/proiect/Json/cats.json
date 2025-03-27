@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Miti",
+    "breed": "Medium haired",
+    "age": "Adult",
+    "gender": "Female",
+    "location": "Cluj",
+    "imageUrl": "../Pics/Screenshot%202024-11-19%20182238.png",
+    "adoptionLink": "formular.html",
+    "timeSpent": ">3 months"
+  },
+  {
+    "name": "Luna",
+    "breed": "Medium haired",
+    "age": "Kitten",
+    "gender": "Female",
+    "location": "Iasi",
+    "imageUrl": "../Pics/luna2.png",
+    "adoptionLink": "formular.html",
+    "timeSpent": ">3 months"
+  },
+  {
+    "name": "Buffy",
+    "breed": "Medium haired",
+    "age": "Adult",
+    "gender": "Male",
+    "location": "Iasi",
+    "imageUrl": "../Pics/buffy.jpg",
+    "adoptionLink": "formular.html",
+    "timeSpent": ">6 months"
+  },
+  {
+    "name": "Milo",
+    "breed": "Long haired",
+    "age": "Adult",
+    "gender": "Male",
+    "location": "Constanta",
+    "imageUrl": "../Pics/Milo.png",
+    "adoptionLink": "formular.html",
+    "timeSpent": "Recent"
+  },
+  {
+    "name": "Nutella",
+    "breed": "Short haired",
+    "age": "Senior",
+    "gender": "Female",
+    "location": "Buzau",
+    "imageUrl": "../Pics/nutella.png",
+    "adoptionLink": "formular.html",
+    "timeSpent": ">1 year"
+  },
+  {
+    "name": "Zoomies",
+    "breed": "Hairless",
+    "age": "Kitten",
+    "gender": "Male",
+    "location": "Timisoara",
+    "imageUrl": "../Pics/zoomies.png",
+    "adoptionLink": "formular.html",
+    "timeSpent": ">3 months"
+  },
+  {
+    "name": "Cheddar",
+    "breed": "Short haired",
+    "age": "Adult",
+    "gender": "Male",
+    "location": "Brasov",
+    "imageUrl": "../Pics/cheddar.png",
+    "adoptionLink": "formular.html",
+    "timeSpent": ">3 months"
+  },
+  {
+    "name": "Tuna",
+    "breed": "Hairless",
+    "age": "Senior",
+    "gender": "Male",
+    "location": "Bacau",
+    "imageUrl": "../Pics/tuna.png",
+    "adoptionLink": "formular.html",
+    "timeSpent": ">6 months"
+  },
+  {
+    "name": "Kit-Kat",
+    "breed": "Medium haired",
+    "age": "Adult",
+    "gender": "Female",
+    "location": "Bucuresti",
+    "imageUrl": "../Pics/kitkat.png",
+    "adoptionLink": "formular.html",
+    "timeSpent": ">1 year"
+  },
+  {
+    "name": "Loki",
+    "breed": "Short haired",
+    "age": "Kitten",
+    "gender": "Female",
+    "location": "Bucuresti",
+    "imageUrl": "../Pics/loki.png",
+    "adoptionLink": "formular.html",
+    "timeSpent": ">Recent"
+  },
+  {
+    "name": "Pookie",
+    "breed": "Medium haired",
+    "age": "Kitten",
+    "gender": "Male",
+    "location": "Suceava",
+    "imageUrl": "../Pics/pookie.png",
+    "adoptionLink": "formular.html",
+    "timeSpent": ">Recent"
+  },
+  {
+    "name": "Dante",
+    "breed": "Long haired",
+    "age": "Senior",
+    "gender": "Male",
+    "location": "Craiova",
+    "imageUrl": "../Pics/dante.png",
+    "adoptionLink": "formular.html",
+    "timeSpent": ">6 months"
+  }
+]

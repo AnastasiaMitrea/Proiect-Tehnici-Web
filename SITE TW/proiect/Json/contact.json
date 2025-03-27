@@ -1,0 +1,62 @@
+[
+  {
+    "city": "Bucuresti",
+    "address": "Strada Florilor 12, 030123",
+    "email": "bucuresti@fureverhome.org",
+    "phone": "+40 795 876 543"
+  },
+  {
+    "city": "Iasi",
+    "address": "Strada Victoriei 35, 040456",
+    "email": "iasi@fureverhome.org",
+    "phone": "+40 790 123 456"
+  },
+  {
+    "city": "Cluj",
+    "address": "Strada Lalelelor 47, 050789",
+    "email": "cluj@fureverhome.org",
+    "phone": "+40 781 987 654"
+  },
+  {
+    "city": "Timisoara",
+    "address": "Bulevardul Unirii 102, 060234",
+    "email": "timisoara@fureverhome.org",
+    "phone": "+40 772 654 321"
+  },
+  {
+    "city": "Constanta",
+    "address": "Strada Capitan Ignat 58, 070345",
+    "email": "constanta@fureverhome.org",
+    "phone": "+40 765 321 987"
+  },
+  {
+    "city": "Bacau",
+    "address": "Strada Marului 19, 080567",
+    "email": "bacau@fureverhome.org",
+    "phone": "+40 751 456 789"
+  },
+  {
+    "city": "Suceava",
+    "address": "Strada Mihai Eminescu 83, 090678",
+    "email": "suceava@fureverhome.org",
+    "phone": "+40 742 123 456"
+  },
+  {
+    "city": "Brasov",
+    "address": "Strada Craiovei 21, 100234",
+    "email": "brasov@fureverhome.org",
+    "phone": "+40 730 987 654"
+  },
+  {
+    "city": "Craiova",
+    "address": "Strada Luminii 66, 110123",
+    "email": "craiova@fureverhome.org",
+    "phone": "+40 721 654 987"
+  },
+  {
+    "city": "Buzau",
+    "address": "Strada Zorilor 9, 120456",
+    "email": "buzau@fureverhome.org",
+    "phone": "+40 712 345 678"
+  }
+]

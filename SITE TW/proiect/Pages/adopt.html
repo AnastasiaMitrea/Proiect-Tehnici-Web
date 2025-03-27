@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Furever Home</title>
+    <link rel="stylesheet" href="../Styles/styles.css">
+    <link rel="stylesheet" href="../Styles/adopt.css">
+    <link rel="stylesheet" href="../Styles/navbar.css">
+    <link rel="icon" type="image/x-icon" href="../Pics/cat-icon-449x512-h6yiv3wo.png">
+</head>
+<body>
+<header>
+    <nav class="desktopMenu">
+        <ul class="nav-bar">
+            <li class="logo"><a href="index.html" id="siteName">Furever Home</a></li>
+            <input type="checkbox" id="check" />
+            <span class="menu">
+                <li><a href="adopt.html" class="navItem">Discover cats</a></li>
+                <li><a href="formular.html" class="navItem">Apply for adoption</a></li>
+                <div class="dropdown">
+                    <a class="navItem" href="#">Get involved</a>
+                    <div class="dropdown-menu">
+                        <a href="donate.html" class="dropdown-item">Donate</a>
+                        <a href="contact.html" class="dropdown-item">Where to find us</a>
+                    </div>
+                </div>
+                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+            </span>
+            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+        </ul>
+    </nav>
+    <nav class="hamburgerMenuNavbar">
+        <label for="menu" class="hamburger" tabindex="0">⬜</label>
+        <input id="menu" type="checkbox" />
+        <ul>
+            <li><a href="adopt.html">Discover Cats</a></li>
+            <li><a href="formular.html">Apply for Adoption</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="contact.html">Where to Find Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div id="adoptionWrap">
+    <div class="adoptionSelect">
+        <div class="adoptionFilter" id="ageFilter">
+            <h2>Age</h2>
+            <select id="ageSelect"></select>
+        </div>
+
+        <div class="adoptionFilter" id="genderFilter">
+            <h2>Gender</h2>
+            <select id="genderSelect"></select>
+        </div>
+
+        <div class="adoptionFilter" id="furLengthFilter">
+            <h2>Fur length</h2>
+            <select id="furLengthSelect"></select>
+        </div>
+
+        <div class="adoptionFilter" id="locationFilter">
+            <h2>City</h2>
+            <select id="locationSelect"></select>
+        </div>
+
+        <div class="adoptionFilter" id="timeSpentFilter">
+            <h2>Time Spent</h2>
+            <select id="timeSpentSelect"></select>
+        </div>
+
+        <div class="applyButton">
+            <button id="applyFiltersBtn">Apply filters</button>
+            <button id="removeFiltersBtn">Remove filters</button>
+        </div>
+
+        <div class="applyButton">
+            <button id="randomAdoptBtn">Random Adopt</button>
+        </div>
+    </div>
+
+    <div class="adoptionGrid" id="cards-container"></div>
+</div>
+<footer>
+    <p>Thank you for supporting Furever Home! 💖</p>
+</footer>
+<script src="../Scripts/adopt.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "age": ["Any", "Kitten", "Adult", "Senior"],
+  "gender": ["Any", "Male", "Female"],
+  "furLength": ["Any", "Short haired", "Medium haired", "Long haired", "Hairless"],
+  "location": ["Any", "Cluj", "Iasi", "Constanta", "Bucuresti", "Brasov", "Timisoara", "Bacau", "Suceava", "Craiova", "Buzau"],
+  "timeSpent": ["Any", "Recent", ">3 months", ">6 months", ">1 year"]
+}

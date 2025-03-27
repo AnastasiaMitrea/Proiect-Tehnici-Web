@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    cursor: url("../Pics/vecteezy_cute-cat-paw-all-black_27209351_optimized.png"), auto;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#siteName {
+    font-weight: bold;
+    font-size: 5vh;
+    color: white;
+    padding-bottom: 2vh;
+    text-decoration: none;
+}
+
+#siteName:hover {
+    cursor: url("../Pics/image.png"), auto;
+}
+
+nav {
+    margin-top: 0;
+    padding-top: 1vw;
+    padding-bottom: 1.5vw;
+    background-color: #D4006F;
+    text-align: center;
+    font-size: 2.5vh;
+}
+
+.navItem {
+    text-decoration: none;
+    text-align: center;
+    font-size: 3vh;
+    margin: 0 2vw;
+    transition: all 0.2s ease-in-out;
+    font-weight: bold;
+    color: white;
+    padding: 2vh;
+}
+
+.navItem:hover {
+    font-size: 4vh;
+    cursor: url("../Pics/image.png"), auto;
+    text-decoration: none;
+}
+
+#check {
+    display: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #D4006F;
+    border-radius: 0.5vw;
+    padding: 0;
+    min-width: 12vw;
+    z-index: 100;
+    text-align: left;
+}
+
+.dropdown-menu.visible {
+    display: block;
+    width: 32vh;
+}
+
+.dropdown-item {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1vh 1vw;
+    font-size: 2.5vh;
+    line-height: 2.5;
+    transition: background-color 0.2s ease;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.dropdown-item:hover {
+    background-color: #B10055;
+    cursor: url("../Pics/image.png"), auto;
+}
+
+.open-menu,
+.close-menu {
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+
+@media (max-width: 610px) {
+    .nav-bar {
+        visibility: hidden;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: var(--color2);
+        transition: all 0.2s ease-in-out;
+    }
+
+    .menu li {
+        margin-top: 40px;
+    }
+
+    .menu li a {
+        padding: 10px;
+    }
+
+    .open-menu,
+    .close-menu {
+        display: block;
+    }
+
+    #check:checked ~ .menu {
+        right: 0;
+    }
+
+    .dropdown {
+        display: none;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 2vh 0;
+    background-color: #D4006F;
+    color: white;
+    font-size: 2vh;
+    width: 100%;
+}

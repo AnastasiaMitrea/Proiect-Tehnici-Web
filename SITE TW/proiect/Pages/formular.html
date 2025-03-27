@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cat Adoption Application Form</title>
+  <link rel="stylesheet" href="../Styles/styles.css">
+  <link rel="stylesheet" href="../Styles/formular.css">
+  <link rel="stylesheet" href="../Styles/adopt2.css">
+  <link rel="stylesheet" href="../Styles/navbar.css">
+  <link rel="icon" type="image/x-icon" href="../Pics/cat-icon-449x512-h6yiv3wo.png">
+</head>
+<body>
+<header>
+  <nav class="desktopMenu">
+    <ul class="nav-bar">
+      <li class="logo"><a href="index.html" id="siteName">Furever Home</a></li>
+      <input type="checkbox" id="check" />
+      <span class="menu">
+        <li><a href="adopt.html">Discover cats</a></li>
+        <li><a href="formular.html">Apply for adoption</a></li>
+        <div class="dropdown">
+          <a class="navItem" href="#">Get involved</a>
+          <div class="dropdown-menu">
+            <a href="donate.html" class="dropdown-item">Donate</a>
+            <a href="contact.html" class="dropdown-item">Where to find us</a>
+          </div>
+      </div>
+        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+      </span>
+      <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+    </ul>
+  </nav>
+  <nav class="hamburgerMenuNavbar">
+    <label for="menu" class="hamburger" tabindex="0">⬜</label>
+    <input id="menu" type="checkbox" />
+    <ul>
+      <li><a href="adopt.html">Discover Cats</a></li>
+      <li><a href="formular.html">Apply for Adoption</a></li>
+      <li><a href="donate.html">Donate</a></li>
+      <li><a href="contact.html">Where to Find Us</a></li>
+      <li><a href="contact.html">Log in</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="page-wrap">
+  <div class="left-column"></div>
+
+  <div class="center-column" id="applicationFormWrap">
+    <h1>Cat Adoption Application</h1>
+    <form action="#" method="POST" enctype="multipart/form-data" class="adoptionForm">
+      <div class="formField">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="formField">
+        <label for="cat-name">Cat you want to adopt:</label>
+        <input type="text" id="cat-name" name="cat-name" required>
+      </div>
+
+      <div class="formField">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+
+      <div class="formField">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="formField">
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+      </div>
+
+      <div class="formField">
+        <label for="id-pic">Picture of ID:</label>
+        <input type="file" id="id-pic" name="id-pic" required>
+      </div>
+
+      <div class="formField">
+        <label for="adults">Adults in Home:</label>
+        <input type="number" id="adults" name="adults" required>
+      </div>
+
+      <div class="formField">
+        <label for="children">Children in Home:</label>
+        <input type="number" id="children" name="children" required>
+      </div>
+
+      <div class="formField">
+        <label for="home">Home:</label>
+        <select id="home" name="home" required>
+          <option value="rent">Rent</option>
+          <option value="own">Own</option>
+        </select>
+      </div>
+
+      <div class="formField" id="landlord-name-field">
+        <label for="landlord-name">Landlord Name (rented home):</label>
+        <input type="text" id="landlord-name" name="landlord-name">
+      </div>
+
+      <div class="formField" id="landlord-phone-field">
+        <label for="landlord-phone">Landlord Phone (rented home):</label>
+        <input type="tel" id="landlord-phone" name="landlord-phone">
+      </div>
+
+      <div class="formField">
+        <label for="pets">Number of Pets:</label>
+        <input type="number" id="pets" name="pets" required>
+      </div>
+
+      <div class="formField">
+        <label for="lifestyle">Cat Lifestyle</label>
+        <select id="lifestyle" name="lifestyle" required>
+          <option value="indoor">Indoor</option>
+          <option value="outdoor">Outdoor</option>
+          <option value="both">Both</option>
+        </select>
+      </div>
+
+      <div class="formField">
+        <label for="people-home">People Home During the Day:</label>
+        <input type="number" id="people-home" name="people-home" required>
+      </div>
+
+      <div class="formField">
+        <label for="hours-away">Hours Away:</label>
+        <input type="number" id="hours-away" name="hours-away" required>
+      </div>
+
+      <div class="formField">
+        <input type="submit" value="Submit Application" class="applyButton">
+      </div>
+    </form>
+  </div>
+  <div class="right-column"></div>
+</div>
+<script src="../Scripts/scripts.js"></script>
+<script src="../Scripts/form.js"></script>
+</body>
+</html>
